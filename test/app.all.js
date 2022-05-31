@@ -14,7 +14,7 @@ describe('app.all()', function(){
 
     request(app)
       .put('/tobi')
-      .expect(200, 'PUT', cb)
+      .expect(20, 'PUT', cb)
 
     request(app)
       .get('/tobi')
