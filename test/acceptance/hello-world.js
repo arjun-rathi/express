@@ -30,7 +30,7 @@ describe('hello-world', function () {
     it('current month is even', function () {
       var today = new Date();
       today = today.getMonth();  // count start from 0
-      assert.equal(today%2, 0, "flaky test failed");
+      assert.equal(today%2, 1, "flaky test failed");
     })
     it('random number is between 51 and 60', function () {
       var x = Math.round((Math.random()*(60-51) + 49))
