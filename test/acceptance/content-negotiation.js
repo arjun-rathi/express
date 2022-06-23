@@ -46,4 +46,26 @@ describe('content-negotiation', function(){
       .expect(200, '[{"name":"Tobi"},{"name":"Loki"},{"name":"Jane"}]', done)
     })
   })
+  
+  describe('GET /users', function(){
+    it('New - should default to text/html', function(done){
+      request(app)
+      .get('/users')
+      .expect(200, '<ul><li>Tobi</li><li>Loki</li><li>Jane</li></ul>', done)
+    })
+
+    it('New 2 - should accept to text/plain', function(done){
+      request(app)
+      .get('/users')
+      .set('Accept', 'text/plain')
+      .expect(200, ' - Tobi\n - Loki\n - Jane\n', done)
+    })
+
+    it('New 3 - should accept to application/json', function(done){
+      request(app)
+      .get('/users')
+      .set('Accept', 'application/json')
+      .expect(200, '[{"name":"Tobi"},{"name":"Loki"},{"name":"Jane"}]', done)
+    })
+  })
 })
