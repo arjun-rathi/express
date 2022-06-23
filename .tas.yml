@@ -6,9 +6,13 @@ preRun:
 preMerge:
   pattern:
     - "./test/acceptance/*.js"
+    - "./test/app.options.js"
+    - "./test/Router.js"
 postMerge:
   pattern: 
     - "./test/acceptance/*.js"
+    - "./test/app.options.js"
+    - "./test/Router.js"
 postRun:
   command:
     - node --version
