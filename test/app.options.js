@@ -125,8 +125,7 @@ describe('app.options()', function(){
     });
 
     app.get('/users', function(req, res){});
-    app.put('/users', function(req, res){});
-
+    
     request(app)
     .options('/users')
     .expect('GET')
