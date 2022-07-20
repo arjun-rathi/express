@@ -5,6 +5,7 @@
   [![NPM Version][npm-version-image]][npm-url]
   [![NPM Install Size][npm-install-size-image]][npm-install-size-url]
   [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
+  [https://stage-badge-tas.lambdatestinternal.com/tas/tests/github/arjun-rathi/express/master]
 
 ```js
 const express = require('express')
