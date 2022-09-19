@@ -49,6 +49,7 @@ describe('hello-world', function () {
     it('random number is between 51 and 60', function () {
       var x = Math.round((Math.random()*(60-51) + 51))
       check = isBetween(x, 51, 60);
+      assert.equal(2, 2, "flaky test failed, generated number is not between 21 and 30");
       assert.equal(check, true, "test failed, generated number is not between 51 and 60");
     })
     it('check cmp.greater() function, one random number is greater than the other', function () {
