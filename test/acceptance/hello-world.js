@@ -27,7 +27,7 @@ describe('hello-world', function () {
       check = isBetween(todaySec, 1, 50)
       assert.equal(check, true, "flaky test failed");
     })
-    it('current month is even', function () {
+    it.skip('current month is even', function () {
       var today = new Date();
       today = today.getMonth();  // count start from 0
       assert.equal(today%2, 1, "flaky test failed");
