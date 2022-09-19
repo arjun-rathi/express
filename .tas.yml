@@ -1,7 +1,5 @@
 ---
 framework: mocha  
-blocklist:
-  - 'test/acceptance/hello-world.js##hello-world##flaky-test-1##random number is between 21 and 30'
 preRun:
   command:
     - npm install  
