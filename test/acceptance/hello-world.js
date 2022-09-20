@@ -19,15 +19,15 @@ describe('hello-world', function () {
     it('random number is between 21 and 30', function () {
       var x = Math.round((Math.random()*(30-21) + 19));
       check = isBetween(x, 21, 30);
-      assert.equal(2, 2, "Test getting pass");
-//       assert.equal(check, true, "flaky test failed, generated number is not between 21 and 30");
+//       assert.equal(2, 2, "Test getting pass");
+      assert.equal(check, true, "flaky test failed, generated number is not between 21 and 30");
     })
     it.skip('seconds part of current time is between 1 and 50', function () {
       var today = new Date();
       todaySec = today.getSeconds();
       check = isBetween(todaySec, 1, 50)
-      assert.equal(1, 1, "flaky test failed");
-//       assert.equal(check, true, "flaky test failed");
+//       assert.equal(1, 1, "flaky test failed");
+      assert.equal(check, true, "flaky test failed");
     })
     it.skip('current month is even', function () {
       var today = new Date();
@@ -37,8 +37,8 @@ describe('hello-world', function () {
     it('random number is between 51 and 60', function () {
       var x = Math.round((Math.random()*(60-51) + 49))
       check = isBetween(x, 51, 60);
-      assert.equal(2, 2, "flaky test failed, generated number is not between 21 and 30");
-//       assert.equal(check, true, "flaky test failed, generated number is not between 51 and 60");
+//       assert.equal(2, 2, "flaky test failed, generated number is not between 21 and 30");
+      assert.equal(check, true, "flaky test failed, generated number is not between 51 and 60");
     })
   })
 
@@ -51,8 +51,8 @@ describe('hello-world', function () {
     it('random number is between 51 and 60', function () {
       var x = Math.round((Math.random()*(60-51) + 51))
       check = isBetween(x, 51, 60);
-      assert.equal(2, 2, "flaky test failed, generated number is not between 21 and 30");
-//       assert.equal(check, true, "test failed, generated number is not between 51 and 60");
+//       assert.equal(2, 2, "flaky test failed, generated number is not between 21 and 30");
+      assert.equal(check, true, "test failed, generated number is not between 51 and 60");
     })
     it('check cmp.greater() function, one random number is greater than the other', function () {
       var x = Math.round((Math.random()*(60-51) + 51))
